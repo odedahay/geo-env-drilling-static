@@ -654,10 +654,7 @@
     font-weight: var(--font-display);
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
-    --tw-tracking: 0.02em;
-    letter-spacing: 0.02em;
     color: var(--color-white);
-    text-transform: uppercase;
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -723,7 +720,7 @@
     border-radius: 8px;
     background: var(--color-brand-blue);
     padding: 0.875rem 1.875rem;
-    font-family: var(--font-body);
+    font-family: var(--font-display);
     font-size: 1.125rem;
     line-height: 1.5;
     font-weight: 500;
@@ -1168,11 +1165,11 @@
     width: fit-content;
     align-items: center;
     gap: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     background: var(--color-brand-yellow);
-    padding: 1.25rem 2.5rem;
+    padding: 0.875rem 1.875rem;
     font-family: var(--font-display);
-    font-size: 1.375rem;
+    font-size: 1.125rem;
     line-height: 1.5;
     font-weight: 500;
     color: var(--color-brand-blue);
@@ -1446,10 +1443,6 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-tracking {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1459,7 +1452,6 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
-      --tw-tracking: initial;
     }
   }
 }
