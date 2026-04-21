@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geo-Environmental Drilling Inc.</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+  <section class="hero-shell about-page-hero-shell overflow-hidden text-white">
+    <div class="hero-wrapper about-page-hero-wrapper">
+      <div class="bg-black/75 hero-topbar-shell">
+        <div class="mx-auto flex w-full max-w-[1440px] items-center justify-end px-5 py-2 text-sm font-medium md:px-16 lg:px-36">
+          <a href="#careers" class="transition-colors duration-200 hover:text-brand-yellow"><i class="ri-user-settings-line"></i>
+            <span>Careers</span>
+          </a>
+          <a href="tel:+19058763388" class="ml-5 inline-flex items-center gap-2 rounded-lg px-5 py-2 transition-colors duration-200 hover:text-brand-yellow">
+            
+            <i class="ri-phone-line"></i>
+            <span>905-876-3388</span>
+          </a>
+        </div>
+      </div>
+
+      <header class="flex flex-1 flex-col">
+        <div class="container-wrapper">
+          <a href="/" aria-label="Geo-Environmental Drilling Inc.">
+            <img
+              src="/images/secondary-logo.svg"
+              alt="Geo-Environmental Drilling Inc. and Geo-Daylighting logos"
+              class="h-auto w-[210px] md:w-[240px] lg:w-[268px]"
+            >
+          </a>
+
+          <nav aria-label="Primary" class="hidden items-center gap-5 lg:flex">
+            <div class="hero-dropdown">
+              <a href="#about" class="hero-nav-link hero-menu-item" aria-haspopup="true">
+                <span>About Us</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <div class="hero-dropdown-menu" role="menu">
+                <a href="about-us.html#about" role="menuitem">Company History</a>
+                <a href="about-us.html#team" role="menuitem">Support</a>
+                <a href="about-us.html#health-safety" role="menuitem">Health &amp; Support</a>
+                <a href="about-us.html#team" role="menuitem">Team and &amp; Staff</a>
+                <a href="about-us.html#training-certifications" role="menuitem">Training Certification</a>
+              </div>
+            </div>
+            <div class="hero-dropdown hero-services-dropdown">
+              <a href="#services" class="hero-nav-link hero-menu-item" aria-haspopup="true">
+                <span>Services</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <div class="hero-services-dropdown-menu" role="menu">
+                <a href="#services" class="hero-service-logo-link" role="menuitem" aria-label="Geo-Environmental Drilling">
+                  <img src="https://www.figma.com/api/mcp/asset/cf07987f-12f2-4c82-b964-a5d4261a75d3" alt="Geo-Environmental Drilling Inc.">
+                </a>
+                <a href="#services" class="hero-service-logo-link" role="menuitem" aria-label="Geo-Daylighting">
+                  <img src="https://www.figma.com/api/mcp/asset/18f674ba-5873-4c1c-b545-ccc35d424e0f" alt="Geo-Daylighting">
+                </a>
+                <a href="#services" class="hero-service-logo-link" role="menuitem" aria-label="Geo-Locating">
+                  <img src="https://www.figma.com/api/mcp/asset/5ed4c093-58e3-4719-ab92-5b73373041f9" alt="Geo-Locating">
+                </a>
+              </div>
+            </div>
+            <a href="#equipment" class="hero-nav-link">Equipment</a>
+            <a href="#feature" class="hero-nav-link">Feature</a>
+            <a href="#contact" class="hero-nav-link">Contact</a>
+            <a href="#estimate" class="hero-nav-link">Request An Estimate</a>
+            <a href="#book" class="inline-flex items-center justify-center rounded-[3px] bg-brand-yellow px-5 py-2.5 font-[var(--font-display)] text-base font-medium text-brand-ink transition-transform duration-200 hover:-translate-y-0.5">Book Now</a>
+          </nav>
+          
+          <!--Hamburger Button-->
+          <div class="lg:hidden">
+            <button id="menu-btn" 
+            type="button" 
+            class="z-40 block hamburger lg:hidden focus:outline-none">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+
+         <!-- Mobile Menu-->
+
+        <div id="menu" class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white bg-black">
+          <a href="" class="hover:text-pink-500">About Us <i class="ri-arrow-down-s-line"></i></a>
+            <div class="flex flex-col pl-8">
+              <a href="#" class="hover:text-pink-500">Company History</a>
+              <a href="#" class="hover:text-pink-500">Support</a>
+              <a href="#" class="hover:text-pink-500">Health & Safety</a>
+              <a href="#" class="hover:text-pink-500">Team & Staff</a>
+              <a href="#" class="hover:text-pink-500">Training Certification</a>
+            </div>
+          <a href="" class="hover:text-pink-500">Services <i class="ri-arrow-down-s-line"></i></a>
+
+            <div class="flex flex-col pl-8">
+              <a href="#" class="hover:text-pink-500">GEO Environmental Drilling Inc.</a>
+              <a href="#" class="hover:text-pink-500">GEO Daylighting</a>
+              <a href="#" class="hover:text-pink-500">GEO Locating</a>
+            </div>
+          
+          <a href="#" class="hover:text-pink-500">Equipment</a>
+          <a href="#" class="hover:text-pink-500">Feature</a>
+          <a href="#" class="hover:text-pink-500">Contact</a>
+          <a href="#" class="hover:text-pink-500">Request An Estimate</a>
+          <a href="#" class="hover:text-pink-500">Book Now</a>
+        </div>
+
+        <div class="about-page-hero-content">
+          <div class="about-page-hero-copy">
+            <h1 class="about-page-hero-title">
+              About Us
+            </h1>
+
+            <p class="about-page-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <span>About Us</span>
+            </p>
+          </div>
+        </div>
+      </header>
+      
+    </div>
+  </section>
+  <section id="about" class="about-main-section">
+    <div class="about-main-inner">
+      <div class="about-main-media" aria-hidden="true"></div>
+
+      <div class="about-main-copy">
+        <div class="about-main-heading">
+          <p class="about-main-eyebrow">About Our Company</p>
+          <h2 class="about-main-title">Geo-Environmental Drilling Inc.</h2>
+        </div>
+
+        <p class="about-main-text">
+          Since 1991, Geo-Environmental Drilling Inc. has set the benchmark for excellence in the drilling industry. Our
+          mission is to deliver dependable, professional drilling services efficiently, while upholding a steadfast
+          commitment to safety, training, equipment diversity, environmental responsibility, and unparalleled customer
+          service. We strive to exceed client expectations by ensuring our team is equipped with the latest skills and
+          knowledge to work safely, utilizing a diverse range of equipment, prioritizing environmental stewardship in all
+          operations, and delivering experiences that build lasting relationships fortified by trust and satisfaction.
+          Guided by our core values, we provide innovative solutions while maintaining the highest standards of integrity
+          and professionalism.
+        </p>
+
+        <img
+          class="about-main-logo"
+          src="/images/body-logo.svg"
+          alt="Geo-Environmental Drilling Inc."
+        >
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="about-support-section">
+    <div class="about-support-inner">
+      <div class="about-icon-heading">
+        <span class="about-icon-box" aria-hidden="true">
+          <img src="images/icon-support.svg" alt="">
+        </span>
+        <h2>THE SUPPORT TEAM</h2>
+      </div>
+
+      <div class="about-support-text">
+        <p>
+          At Geo, we recognize that every project is unique. That’s why we work closely with our clients to ensure
+          seamless execution from planning through completion. Our experienced management team, skilled field crews,
+          dedicated operations staff, and behind the scenes maintenance team work together to keep projects running
+          efficiently and effectively.
+        </p>
+        <p>
+          When you choose Geo for your next project, you're partnering with a team committed to delivering optimal
+          results while minimizing impact and maximizing value.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-testimonial-banner" aria-label="Geo-Environmental Drilling field work"></section>
+
+  <section id="health-safety" class="about-health-section">
+    <div class="about-health-inner">
+      <div class="about-icon-heading about-health-heading">
+        <span class="about-icon-box about-health-icon" aria-hidden="true">
+          <img src="images/icon-health-safety.svg" alt="">
+        </span>
+        <h2>HEALTH <span>&amp; SAFETY</span></h2>
+      </div>
+
+      <div class="about-health-text">
+        <p>
+          At Geo-Environmental Drilling Inc., the health and safety of our employees and clients is paramount. We take
+          proactive measures to foster a culture of safety that emphasizes risk prevention, accountability and
+          prioritizes the well-being of everyone involved in our operations.
+        </p>
+        <p>
+          Our participation in the WSIB Excellence Program underscores our dedication to maintaining exemplary health and
+          safety practices. Through ongoing education and training, our team is equipped with the knowledge and skills
+          required to navigate the complexities of various drilling projects with confidence. Our strict adherence to
+          industry regulations and best practices ensures that our operations meet and exceed established safety
+          standards.
+        </p>
+        <p>
+          These efforts are a testament to our unwavering dedication to protecting our workforce and delivering safe,
+          reliable services to our valued clients.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="training-certifications" class="about-training-section">
+    <div class="about-training-inner">
+      <div class="about-training-heading">
+        <h2>TRAINING &amp; CERTIFICATIONS</h2>
+        <p>
+          Our crews receive comprehensive training across regulatory, safety, environmental, and industry-specific
+          programs, including:
+        </p>
+      </div>
+
+      <div class="about-training-grid">
+        <article class="about-training-card">
+          <h3>Regulatory &amp;<br>Technical Certification</h3>
+          <ul>
+            <li>Licensed Well Technician (Class 1, 2, and/or 3 - MECP)</li>
+            <li>Fleming College Continuing Education (Well Technicians)</li>
+          </ul>
+        </article>
+
+        <article class="about-training-card">
+          <h3>Core Safety<br>Training</h3>
+          <ul>
+            <li>WHMIS</li>
+            <li>First Aid / CPR / AED</li>
+            <li>Working at Heights</li>
+            <li>Supervisor &amp; Worker Health and Safety Awareness</li>
+            <li>Fire Extinguisher Training</li>
+            <li>Respirator (Level C)</li>
+            <li>H<sub>2</sub>S (selected crews)</li>
+            <li>SCBA (selected crews)</li>
+          </ul>
+        </article>
+
+        <article class="about-training-card">
+          <h3>Equipment &amp;<br>Operations Safety</h3>
+          <ul>
+            <li>Forklift Certification</li>
+            <li>Propane Handling</li>
+            <li>Defensive Driving</li>
+          </ul>
+        </article>
+
+        <article class="about-training-card">
+          <h3>Environmental &amp;<br>Utility Awareness</h3>
+          <ul>
+            <li>Utility Locate Awareness</li>
+            <li>Alberta Ground Disturbance (AB 201)</li>
+          </ul>
+        </article>
+
+        <article class="about-training-card about-training-card-wide">
+          <h3>Client, Infrastructure &amp;<br>Site-Specific Orientations</h3>
+          <ul>
+            <li>Enbridge Health, Safety &amp; Environment</li>
+            <li>TransCanada &amp; Trans Northern Pipelines</li>
+            <li>Imperial Oil, Suncor, Shell Americas, Cenovus Energy</li>
+            <li>Petroleum Orientation Safety Training (POST)</li>
+            <li>Metrolinx PTS / GO Safe Transit</li>
+            <li>CP &amp; CN Rail Safe</li>
+            <li>Crosslinx</li>
+            <li>ONTrack Alliance / ONXpress Safety Induction (selected crews)</li>
+            <li>PCL Construction (selected crews)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="affiliations" class="affiliations-section">
+    <div class="affiliations-inner">
+      <div class="affiliations-heading">
+        <h2 class="affiliations-title">Professional Affiliations &amp; Safety Certifications</h2>
+      </div>
+
+      <div class="affiliations-grid">
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/ISNetworld.png" alt="Pinchin logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/Alcumus-Cognibox-Membership-Logo.png" alt="COR logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/ComplyWorks.png" alt="ComplyWorks logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/WSIBHealthandSafetyExcellenceProgram.png" alt="Avetta logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/POST.png" alt="Badge logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/pts.png" alt="Health and safety logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/erailsafe.png" alt="ISN logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/CPKC.png" alt="CPIE logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/cn.png" alt="CN logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/nda.png" alt="Safety status logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/ogwa.png" alt="Registry logo">
+        </article>
+        <article class="affiliations-logo-card">
+          <img class="affiliations-logo-image" src="images/affiliations/orcga.png" alt="ORCGA logo">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="company-high" class="company-high-section">
+    <div class="company-high-inner">
+      <div class="company-high-content">
+        <div class="company-high-copy">
+          <h2 class="company-high-title">Trusted Experience In Environmental &amp; Geotechnical Drilling</h2>
+          <p class="company-high-text">
+            Our team has supported environmental and geotechnical projects for decades, delivering reliable drilling,
+            field services, and safe operations across Ontario.
+          </p>
+        </div>
+
+        <div class="company-high-stats">
+          <article class="company-high-stat">
+            <h3 class="company-high-stat-value">35+ years</h3>
+            <p class="company-high-stat-label">
+              <span class="company-high-stat-icon" aria-hidden="true">
+                <img src="images/icons/potted_plant.svg" />
+              </span>
+              <span>Experience</span>
+            </p>
+          </article>
+
+          <div class="company-high-divider" aria-hidden="true"></div>
+
+          <article class="company-high-stat">
+            <h3 class="company-high-stat-value">Serving Clients</h3>
+            <p class="company-high-stat-label">
+              <span class="company-high-stat-icon" aria-hidden="true">
+                 <img src="images/icons/gear-icon.svg" />
+              </span>
+              <span>Across Ontario</span>
+            </p>
+          </article>
+
+          <div class="company-high-divider" aria-hidden="true"></div>
+
+          <article class="company-high-stat">
+            <h3 class="company-high-stat-value">20 years</h3>
+            <p class="company-high-stat-label">
+              <span class="company-high-stat-icon" aria-hidden="true">
+                <img src="images/icons/yellow-hat-icon.svg" />
+              </span>
+              <span>Zero Lost Time Incidents</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-notes">
+    <div class="footer-main">
+      <div class="footer-main-inner">
+        <div class="footer-brand">
+          <img
+            class="footer-logo"
+            src="images/Logo-footer.svg"
+            alt="Geo-Environmental Drilling Inc. logo"
+          >
+          <p class="footer-address">1 Mansewood Ct,<br>Acton, ON L7J 0A1</p>
+
+          <div class="footer-contact-list">
+            <a class="footer-contact-link" href="mailto:estimates@geo-environmentaldrilling.com">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <i class="ri-mail-line"></i>
+              </span>
+              <span>estimates@geo-environmentaldrilling.com</span>
+            </a>
+            <a class="footer-contact-link" href="tel:+19058763388">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <i class="ri-smartphone-line"></i>
+              </span>
+              <span>Phone : (905) 876-3388</span>
+            </a>
+            <p class="footer-contact-link">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <img src="/images/fax_24dp.svg" />
+              </span>
+              <span>Fax: (905) 876-3328</span>
+            </p>
+          </div>
+
+          <div class="footer-socials">
+            <a class="footer-social" href="#" aria-label="Instagram">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a class="footer-social" href="#" aria-label="LinkedIn">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+            <a class="footer-social" href="#" aria-label="Facebook">
+              <i class="ri-facebook-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer">
+          <h2 class="footer-heading">Quick Links</h2>
+          <a href="#services">Services</a>
+          <a href="#about">About Us</a>
+          <a href="#company-high">Health &amp; Safety</a>
+          <a href="#equipment">Equipment</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div class="footer-inquiries">
+          <h2 class="footer-heading">Inquiries</h2>
+          <p>
+            For any inquiries or cost estimates, please call:
+            <a href="tel:+19058763388"> 905-876-3388</a>
+            or email
+            <a href="mailto:estimates@geo-environmentaldrilling.com"> estimates@geo-environmentaldrilling.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Geo-Environmental Drilling Inc. • All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
