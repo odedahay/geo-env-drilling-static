@@ -338,14 +338,8 @@
   .pl-8 {
     padding-left: calc(var(--spacing) * 8);
   }
-  .pl-10 {
-    padding-left: calc(var(--spacing) * 10);
-  }
   .pl-12 {
     padding-left: calc(var(--spacing) * 12);
-  }
-  .pl-20 {
-    padding-left: calc(var(--spacing) * 20);
   }
   .text-4xl {
     font-size: var(--text-4xl);
@@ -670,6 +664,97 @@
         color: var(--color-brand-yellow);
       }
     }
+  }
+  .hero-dropdown {
+    position: relative;
+    z-index: 70;
+  }
+  .hero-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 0;
+    z-index: 70;
+    display: flex;
+    min-width: 15rem;
+    flex-direction: column;
+    border-radius: 0.375rem;
+    background: rgb(255 255 255 / 98%);
+    padding: 0.5rem 0;
+    box-shadow: 0 18px 40px rgb(0 0 0 / 22%);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.5rem);
+    transition: opacity 160ms var(--default-transition-timing-function), transform 160ms var(--default-transition-timing-function), visibility 160ms var(--default-transition-timing-function);
+  }
+  .hero-dropdown:hover .hero-dropdown-menu, .hero-dropdown:focus-within .hero-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .hero-dropdown .ri-arrow-down-s-line {
+    display: inline-block;
+    transition: transform 160ms var(--default-transition-timing-function);
+  }
+  .hero-dropdown:hover .ri-arrow-down-s-line, .hero-dropdown:focus-within .ri-arrow-down-s-line {
+    transform: rotate(180deg);
+  }
+  .hero-dropdown-menu a {
+    padding: 0.75rem 1rem;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #000;
+    white-space: nowrap;
+    transition: background-color 160ms var(--default-transition-timing-function), color 160ms var(--default-transition-timing-function);
+  }
+  .hero-dropdown-menu a:hover, .hero-dropdown-menu a:focus {
+    background: rgb(20 70 131 / 8%);
+    color: var(--color-brand-blue);
+    outline: none;
+  }
+  .hero-services-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 50%;
+    z-index: 70;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    gap: 2.5rem;
+    width: max-content;
+    min-width: 44rem;
+    padding: 1.25rem 2.5rem;
+    background: #fff;
+    box-shadow: 0 0.25rem 0.625rem rgb(0 0 0 / 25%);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(0.5rem);
+    transition: opacity 160ms var(--default-transition-timing-function), transform 160ms var(--default-transition-timing-function), visibility 160ms var(--default-transition-timing-function);
+  }
+  .hero-services-dropdown:hover .hero-services-dropdown-menu, .hero-services-dropdown:focus-within .hero-services-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+  .hero-service-logo-link {
+    display: flex;
+    height: 8.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    transition: background-color 160ms var(--default-transition-timing-function), transform 160ms var(--default-transition-timing-function);
+  }
+  .hero-service-logo-link:hover, .hero-service-logo-link:focus {
+    background: rgb(20 70 131 / 6%);
+    outline: none;
+    transform: translateY(-0.125rem);
+  }
+  .hero-service-logo-link img {
+    display: block;
+    width: auto;
+    max-width: 18rem;
+    max-height: 7.75rem;
+    object-fit: contain;
   }
   .hero-menu-item {
     display: flex;
@@ -1376,16 +1461,16 @@
   .hamburger-bottom {
     transform: translateY(14px);
   }
-  .open-menu {
+  .open {
     transform: rotate(90deg);
   }
-  .open-menu .hamburger-top {
+  .open .hamburger-top {
     transform: rotate(45deg) translateY(6px) translateX(6px);
   }
-  .open-menu .hamburger-middle {
+  .open .hamburger-middle {
     display: none;
   }
-  .open-menu .hamburger-bottom {
+  .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
   }
   @media (width >= 48rem) {

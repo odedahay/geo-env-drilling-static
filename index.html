@@ -37,14 +37,36 @@
           </a>
 
           <nav aria-label="Primary" class="hidden items-center gap-5 lg:flex">
-            <a href="#about" class="hero-nav-link hero-menu-item">
-              <span>About Us</span>
-             <i class="ri-arrow-down-s-line"></i>
-            </a>
-            <a href="#services" class="hero-nav-link hero-menu-item">
-              <span>Services</span>
-              <i class="ri-arrow-down-s-line"></i>
-            </a>
+            <div class="hero-dropdown">
+              <a href="#about" class="hero-nav-link hero-menu-item" aria-haspopup="true">
+                <span>About Us</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <div class="hero-dropdown-menu" role="menu">
+                <a href="#about" role="menuitem">Company History</a>
+                <a href="#contact" role="menuitem">Support</a>
+                <a href="#company-high" role="menuitem">Health &amp; Support</a>
+                <a href="#team" role="menuitem">Team and &amp; Staff</a>
+                <a href="#affiliations" role="menuitem">Training Certification</a>
+              </div>
+            </div>
+            <div class="hero-dropdown hero-services-dropdown">
+              <a href="#services" class="hero-nav-link hero-menu-item" aria-haspopup="true">
+                <span>Services</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <div class="hero-services-dropdown-menu" role="menu">
+                <a href="#services" class="hero-service-logo-link" role="menuitem" aria-label="Geo-Environmental Drilling">
+                  <img src="https://www.figma.com/api/mcp/asset/cf07987f-12f2-4c82-b964-a5d4261a75d3" alt="Geo-Environmental Drilling Inc.">
+                </a>
+                <a href="#services" class="hero-service-logo-link" role="menuitem" aria-label="Geo-Daylighting">
+                  <img src="https://www.figma.com/api/mcp/asset/18f674ba-5873-4c1c-b545-ccc35d424e0f" alt="Geo-Daylighting">
+                </a>
+                <a href="#services" class="hero-service-logo-link" role="menuitem" aria-label="Geo-Locating">
+                  <img src="https://www.figma.com/api/mcp/asset/5ed4c093-58e3-4719-ab92-5b73373041f9" alt="Geo-Locating">
+                </a>
+              </div>
+            </div>
             <a href="#equipment" class="hero-nav-link">Equipment</a>
             <a href="#feature" class="hero-nav-link">Feature</a>
             <a href="#contact" class="hero-nav-link">Contact</a>
