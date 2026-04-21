@@ -391,7 +391,7 @@
   }
 
   .affiliations-logo-image {
-    max-height: 3rem;
+    max-height: 6rem;
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -909,6 +909,52 @@
     line-height: 1.4;
     color: var(--color-brand-ink);
   }
+
+  .hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative; 
+  }
+
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom{
+    position: absolute;
+    height: 2px;
+    width: 24px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+
+  .hamburger-middle{
+    transform: translateY(7px)
+  }
+
+  .hamburger-bottom{
+    transform: translateY(14px)
+  }
+
+  .open-menu{
+    transform: rotate(90deg);
+  }
+
+  .open-menu .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+  }
+  .open-menu .hamburger-middle{
+    display: none;
+  }
+  .open-menu .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  }
+
+
+
 
   @media (width >= 48rem) {
     .about-copy {
