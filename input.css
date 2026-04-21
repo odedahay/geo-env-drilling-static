@@ -118,9 +118,7 @@
   }
 
   .hero-shell {
-    background-image:
-      linear-gradient(97deg, rgba(11, 51, 100, 0.55) 66.541%, rgba(102, 102, 102, 0.55) 90.814%),
-      url("../images/hero-bg.jpg");
+ 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +131,7 @@
   }
 
   .hero-brand-strip {
-    background-image: url("../images/home-page-logo.png");
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -145,6 +143,10 @@
 
   .hero-nav-link {
     @apply font-[var(--font-display)] text-base text-white transition-colors duration-200 hover:text-brand-yellow;
+  }
+
+  .hero-nav-link.is-active {
+    color: var(--color-brand-yellow);
   }
 
   .hero-dropdown {
@@ -287,9 +289,7 @@
 
   .about-page-hero-shell {
     min-height: 34.375rem;
-    background-image:
-      linear-gradient(97deg, rgba(11, 51, 100, 0.55) 66.541%, rgba(102, 102, 102, 0.55) 90.814%),
-      url("../images/abou-us-header.jpg");
+   
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -400,6 +400,7 @@
     line-height: 1;
   }
 
+
   .about-media {
     min-height: 22rem;
     background-image:
@@ -413,6 +414,8 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
 
   .about-main-section {
     width: 100%;
@@ -635,6 +638,407 @@
     font-size: 1rem;
     line-height: 1.5;
     list-style: disc;
+  }
+
+  .drilling-hero-shell {
+    min-height: 43.375rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .drilling-hero-wrapper {
+    min-height: 43.375rem;
+  }
+
+  .drilling-hero-shell .hero-brand-strip {
+    width: 18.75rem;
+    max-width: 100%;
+    height: 8.4375rem;
+    background-position: left center;
+    /* background-image: url("https://www.figma.com/api/mcp/asset/f46860ea-3dd2-412a-873f-b1d515d9bf28"); */
+  }
+
+  .drilling-overview-section {
+    width: 100%;
+    border-top: 9px solid var(--color-brand-yellow);
+    background: #eee;
+  }
+
+  .drilling-overview-inner {
+    margin-inline: auto;
+    display: grid;
+    width: 100%;
+    max-width: 1440px;
+    gap: 2rem;
+  }
+
+  .drilling-overview-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3.75rem 1.5rem 1rem;
+  }
+
+  .drilling-overview-copy h2 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #2e2e2e;
+  }
+
+  .drilling-overview-copy p,
+  .drilling-intro-cont-section p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  .drilling-overview-media {
+    min-height: 22rem;
+    background-image: url("https://www.figma.com/api/mcp/asset/beeaf0b8-d889-4ce2-b011-669e26bf6711");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .drilling-page-inner {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1440px;
+    padding-inline: 1.5rem;
+  }
+
+  .drilling-intro-cont-section {
+    width: 100%;
+    background: #fff;
+    padding-block: 3.75rem;
+  }
+
+  .drilling-intro-cont-section .drilling-page-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .drilling-capabilities-section {
+    width: 100%;
+    background: #fff;
+    padding-bottom: 3.75rem;
+  }
+
+  .drilling-section-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1.875rem;
+  }
+
+  .drilling-section-title-row h2,
+  .drilling-field-section h2,
+  .drilling-equipment-section h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #000;
+  }
+
+  .drilling-section-controls {
+    display: none;
+    gap: 0.625rem;
+  }
+
+  .drilling-section-controls span {
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #eee;
+    color: #333;
+  }
+
+  .drilling-capabilities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .drilling-capability-card {
+    min-height: 21.875rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 1.875rem 1.25rem;
+    background: #fff;
+  }
+
+  .drilling-capability-card h3,
+  .drilling-field-card {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .drilling-capability-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000;
+    list-style: disc;
+  }
+
+  .drilling-field-section {
+    width: 100%;
+    background: #eee;
+    padding-block: 3.75rem;
+  }
+
+  .drilling-field-section h2 {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 0.625rem;
+  }
+
+  .drilling-field-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+    margin-top: 1.125rem;
+  }
+
+  .drilling-field-card {
+    font-size: 1.45rem;
+    font-weight: 500;
+    min-height: 6.125rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 1.875rem 1.25rem;
+    background: #eee;
+    transition:
+      background-color 180ms var(--default-transition-timing-function),
+      border-color 180ms var(--default-transition-timing-function),
+      transform 180ms var(--default-transition-timing-function);
+  }
+
+  .drilling-field-card:hover,
+  .drilling-field-card:focus {
+    border-color: var(--color-brand-yellow);
+    background: #fff;
+    outline: none;
+    transform: translateY(-0.125rem);
+  }
+
+  .drilling-equipment-section {
+    width: 100%;
+    background: #fff;
+    padding-block: 3.75rem;
+  }
+
+  .drilling-equipment-inner {
+    margin-inline: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-inline: 1.5rem;
+    text-align: center;
+  }
+
+  .drilling-equipment-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+    background: var(--color-brand-yellow);
+    padding: 1.25rem 2.5rem;
+    font-family: var(--font-display);
+    font-size: 1.375rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--color-brand-blue);
+    transition: transform 180ms var(--default-transition-timing-function);
+  }
+
+  .drilling-equipment-button:hover,
+  .drilling-equipment-button:focus {
+    outline: none;
+    transform: translateY(-0.125rem);
+  }
+
+  .daylighting-hero-shell {
+    min-height: 43.375rem;
+    /* background-image:
+      linear-gradient(97deg, rgba(11, 51, 100, 0.55) 66.541%, rgba(102, 102, 102, 0.55) 90.814%),
+      url("https://www.figma.com/api/mcp/asset/28b5dd54-ac21-42f5-8912-d7e02598de6a"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .daylighting-hero-shell .daylighting-brand-strip,
+  .drilling-hero-shell .daylighting-brand-strip {
+    width: 18.75rem;
+    max-width: 100%;
+    height: 10.5rem;
+    background-position: left center;
+    background-size: contain;
+  }
+
+  .daylighting-overview-section {
+    width: 100%;
+    border-top: 9px solid var(--color-brand-yellow);
+    background: #eee;
+  }
+
+  .daylighting-overview-inner {
+    margin-inline: auto;
+    display: grid;
+    width: 100%;
+    max-width: 1440px;
+    gap: 2rem;
+  }
+
+  .daylighting-overview-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3.75rem 1.5rem 1rem;
+  }
+
+  .daylighting-overview-copy h2 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #2e2e2e;
+  }
+
+  .daylighting-overview-copy p,
+  .daylighting-intro-section p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  .daylighting-overview-media {
+    min-height: 22rem;
+    background-image: url("https://www.figma.com/api/mcp/asset/2cafda7c-e092-4374-96ef-732929a9820f");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .daylighting-page-inner {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1440px;
+    padding-inline: 1.5rem;
+  }
+
+  .daylighting-intro-section,
+  .daylighting-list-section {
+    width: 100%;
+    background: #fff;
+  }
+
+  .daylighting-intro-section {
+    padding-block: 3.75rem 1.875rem;
+  }
+
+  .daylighting-list-section {
+    padding-bottom: 3.75rem;
+  }
+
+  .daylighting-list-layout {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .daylighting-list-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+  }
+
+  .daylighting-list-card {
+    display: flex;
+    min-height: 4.125rem;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    background: #fff;
+    padding: 1.25rem;
+    font-size: 1.375rem;
+    line-height: 1.2;
+    color: #000;
+    transition:
+      border-color 180ms var(--default-transition-timing-function),
+      background-color 180ms var(--default-transition-timing-function),
+      transform 180ms var(--default-transition-timing-function);
+  }
+
+  .daylighting-list-card:hover {
+    border-color: var(--color-brand-yellow);
+    background: #fffaf0;
+    transform: translateY(-0.125rem);
+  }
+
+  .daylighting-list-image {
+    min-height: 18.375rem;
+    border-radius: 1rem;
+    background-image:
+      linear-gradient(-38deg, rgb(0 0 0 / 0%) 4%, rgb(20 70 131 / 20%) 100%),
+      url("https://www.figma.com/api/mcp/asset/b25d27b7-4893-4dba-be02-d488e29e7e0e");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .locating-main-content-section {
+    width: 100%;
+    background: #fff;
+  }
+
+  .locating-main-content-inner {
+    margin-inline: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+    padding: 3.75rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  .locating-main-content-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .locating-main-content-callout {
+    width: fit-content;
+    max-width: 100%;
+    border-radius: 8px;
+    background: #fda;
+    padding: 0.625rem 0.9375rem;
+    font-weight: 500;
   }
 
   .services-section {
@@ -1352,6 +1756,53 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .drilling-page-inner,
+    .drilling-equipment-inner {
+      padding-inline: 3rem;
+    }
+
+    .drilling-overview-copy {
+      padding-inline: 3rem;
+    }
+
+    .drilling-overview-media {
+      min-height: 28rem;
+    }
+
+    .drilling-section-controls {
+      display: flex;
+    }
+
+    .drilling-capabilities-grid,
+    .drilling-field-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .drilling-equipment-inner {
+      flex-direction: row;
+      gap: 1.875rem;
+    }
+
+    .daylighting-page-inner {
+      padding-inline: 3rem;
+    }
+
+    .daylighting-overview-copy {
+      padding-inline: 3rem;
+    }
+
+    .daylighting-overview-media {
+      min-height: 28rem;
+    }
+
+    .daylighting-list-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .locating-main-content-inner {
+      padding-inline: 3rem;
+    }
+
     .services-inner {
       padding-inline: 3rem;
     }
@@ -1430,6 +1881,18 @@
       padding-right: 0;
     }
 
+     .about-copy.inner{
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
+      padding-left: 9rem;
+      padding-right: 0;
+    }
+    
+    .about-media.inner{
+      min-height: 28.5rem!important;
+    }
+
+
     .about-media {
       min-height: 36rem;
       position: relative;
@@ -1478,6 +1941,73 @@
 
     .about-training-card-wide {
       grid-column: span 2;
+    }
+
+    .drilling-hero-shell,
+    .drilling-hero-wrapper {
+      min-height: 43.375rem;
+    }
+
+    .drilling-overview-inner {
+      grid-template-columns: minmax(0, 35.5rem) minmax(0, 1fr);
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .drilling-overview-copy {
+      padding: 3.75rem 0 3.75rem 9rem;
+    }
+
+    .drilling-overview-media {
+      min-height: 31rem;
+      clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .drilling-page-inner,
+    .drilling-equipment-inner {
+      padding-inline: 9rem;
+    }
+
+    .drilling-capabilities-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .drilling-equipment-section {
+      padding-block: 3.75rem;
+    }
+
+    .daylighting-hero-shell,
+    .drilling-hero-wrapper {
+      min-height: 43.375rem;
+    }
+
+    .daylighting-overview-inner {
+      grid-template-columns: minmax(0, 35.5rem) minmax(0, 1fr);
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .daylighting-overview-copy {
+      padding: 3.75rem 0 3.75rem 9rem;
+    }
+
+    .daylighting-overview-media {
+      min-height: 31rem;
+      clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .daylighting-page-inner {
+      padding-inline: 9rem;
+    }
+
+    .daylighting-list-layout {
+      grid-template-columns: minmax(0, 2fr) minmax(20rem, 1fr);
+      align-items: start;
+      gap: 1.5rem;
+    }
+
+    .locating-main-content-inner {
+      padding-inline: 9rem;
     }
 
     .services-inner {

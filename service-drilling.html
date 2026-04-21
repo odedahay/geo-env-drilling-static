@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geo-Environmental Drilling Inc.</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="css/style.css" rel="stylesheet">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+  <section class="hero-shell drilling-hero-shell min-h-screen overflow-hidden text-white">
+    <div class="hero-wrapper">
+      <div class="bg-black/75 hero-topbar-shell">
+        <div class="mx-auto flex w-full max-w-[1440px] items-center justify-end px-5 py-2 text-sm font-medium md:px-16 lg:px-36">
+          <a href="#careers" class="transition-colors duration-200 hover:text-brand-yellow"><i class="ri-user-settings-line"></i>
+            <span>Careers</span>
+          </a>
+          <a href="tel:+19058763388" class="ml-5 inline-flex items-center gap-2 rounded-lg px-5 py-2 transition-colors duration-200 hover:text-brand-yellow">
+            
+            <i class="ri-phone-line"></i>
+            <span>905-876-3388</span>
+          </a>
+        </div>
+      </div>
+
+      <header class="flex flex-1 flex-col">
+        <div class="container-wrapper">
+          <a href="/" aria-label="Geo-Environmental Drilling Inc.">
+            <img
+              src="/images/secondary-logo.svg"
+              alt="Geo-Environmental Drilling Inc. and Geo-Daylighting logos"
+              class="h-auto w-[210px] md:w-[240px] lg:w-[268px]"
+            >
+          </a>
+
+          <nav aria-label="Primary" class="hidden items-center gap-5 lg:flex">
+            <div class="hero-dropdown">
+              <a href="" class="hero-nav-link hero-menu-item" aria-haspopup="true">
+                <span>About Us</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <div class="hero-dropdown-menu" role="menu">
+                <a href="about-us.html#about" role="menuitem">Company History</a>
+                <a href="about-us.html#contact" role="menuitem">Support</a>
+                <a href="about-us.html#company-high" role="menuitem">Health &amp; Support</a>
+                <a href="about-us.html#team" role="menuitem">Team and &amp; Staff</a>
+                <a href="about-us.html#affiliations" role="menuitem">Training Certification</a>
+              </div>
+            </div>
+            <div class="hero-dropdown hero-services-dropdown">
+              <a href="" class="hero-nav-link hero-menu-item" aria-haspopup="true">
+                <span>Services</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <div class="hero-services-dropdown-menu" role="menu">
+                <a href="drilling.html" class="hero-service-logo-link" role="menuitem" aria-label="Geo-Environmental Drilling">
+                  <img src="images/service-geo-drilling.png" alt="Geo-Environmental Drilling Inc.">
+                </a>
+                <a href="geo-daylighting.html" class="hero-service-logo-link" role="menuitem" aria-label="Geo-Daylighting">
+                  <img src="images/service-geo-daylighting.png" alt="Geo-Daylighting">
+                </a>
+                <a href="geo-Locating.html" class="hero-service-logo-link" role="menuitem" aria-label="Geo-Locating">
+                  <img src="images/service-geo-locating.png" alt="Geo-Locating">
+                </a>
+              </div>
+            </div>
+            <a href="#equipment" class="hero-nav-link">Equipment</a>
+            <a href="#feature" class="hero-nav-link">Feature</a>
+            <a href="#contact" class="hero-nav-link">Contact</a>
+            <a href="#estimate" class="hero-nav-link">Request An Estimate</a>
+            <a href="#book" class="inline-flex items-center justify-center rounded-[3px] bg-brand-yellow px-5 py-2.5 font-[var(--font-display)] text-base font-medium text-brand-ink transition-transform duration-200 hover:-translate-y-0.5">Book Now</a>
+          </nav>
+          
+          <!--Hamburger Button-->
+          <div class="md:hidden">
+            <button id="menu-btn" 
+            type="button" 
+            class="z-40 block hamburger md:hidden focus:outline-none">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+
+         <!-- Mobile Menu-->
+
+        <div id="menu" class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white bg-black">
+          <a href="" class="hover:text-pink-500">About Us <i class="ri-arrow-down-s-line"></i></a>
+            <div class="flex flex-col pl-8">
+              <a href="about-us.html#about" role="menuitem">Company History</a>
+                <a href="about-us.html#contact" role="menuitem">Support</a>
+                <a href="about-us.html#company-high" role="menuitem">Health &amp; Support</a>
+                <a href="about-us.html#team" role="menuitem">Team and &amp; Staff</a>
+                <a href="about-us.html#affiliations" role="menuitem">Training Certification</a>
+            </div>
+          <a href="" class="hover:text-pink-500">Services <i class="ri-arrow-down-s-line"></i></a>
+
+            <div class="flex flex-col pl-8">
+              <a href="#" class="hover:text-pink-500">GEO Environmental Drilling Inc.</a>
+              <a href="#" class="hover:text-pink-500">GEO Daylighting</a>
+              <a href="#" class="hover:text-pink-500">GEO Locating</a>
+            </div>
+          
+          <a href="#" class="hover:text-pink-500">Equipment</a>
+          <a href="#" class="hover:text-pink-500">Feature</a>
+          <a href="#" class="hover:text-pink-500">Contact</a>
+          <a href="#" class="hover:text-pink-500">Request An Estimate</a>
+          <a href="#" class="hover:text-pink-500">Book Now</a>
+        </div>
+
+        <div class="mx-auto flex w-full max-w-[1440px] flex-1 items-center px-5 pb-16 pt-12 md:px-12 md:pt-24 lg:px-40 lg:pb-[45px] lg:pt-[150px]">
+          <div class="max-w-[843px]">
+
+           <div class="hero-brand-strip mb-4 flex h-[160px] w-full max-w-[820px] items-center justify-center sm:h-[190px] lg:h-[250px]" style="background-image: url('../images/drilling-logo.svg');"></div>
+
+
+            <h1 class="hero-display max-w-[843px] text-4xl font-extrabold uppercase leading-[1.2] sm:text-5xl lg:text-[38px]">
+                Geo-Environmental Drilling
+            </h1>
+
+            <p class="mt-4 max-w-[540px] text-base font-medium leading-tight text-white md:text-lg">
+               Reliable drilling and environmental field services supporting geotechnical, environmental, and infrastructure projects.
+            </p>
+
+            <div class="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-5">
+              <a href="#estimate" class="hero-button-primary">Get a Quote</a>
+              <a href="#book" class="hero-button-secondary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+    </div>
+  </section>
+  <!-- About us-->
+  <section id="about" class="about-section">
+    <div class="about-inner">
+      <div class="about-copy">
+        <div class="about-heading">
+         
+          <h2 class="about-title">Drilling</h2>
+        </div>
+
+        <p class="about-text">
+         With a strong commitment to safety, precision, and efficiency, GEDI delivers comprehensive solutions to support projects across environmental, geotechnical, construction, and resource sectors. Backed by experienced crews and modern, well-maintained equipment, we are equipped to operate in a wide range of ground conditions and site constraints, from sensitive environments to challenging subsurface formations.
+        </p>
+        
+        
+      </div>
+
+      <div class="about-media inner" style="background-image:
+      linear-gradient(
+        180deg,
+        rgb(20 70 131 / 10%) 0%,
+        rgb(255 255 255 / 40%) 100%
+      ),
+      url('/images/drilling-main-image.jpg');" aria-hidden="true"></div>
+    </div>
+  </section>
+  <section class="drilling-intro-cont-section">
+    <div class="drilling-page-inner">
+      <p>
+        Our approach focuses on accuracy, reliability, and minimizing project timelines while maintaining the highest
+        industry standards.
+      </p>
+      <p>
+        Whether supporting investigation, sampling, or site development initiatives, we provide dependable drilling
+        services tailored to meet the unique requirements of every project.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="capabilities" class="drilling-capabilities-section">
+    <div class="drilling-page-inner">
+      <div class="drilling-section-title-row">
+        <h2>Drilling And Testing Capabilities</h2>
+        <!-- <div class="drilling-section-controls" aria-hidden="true">
+          <span><i class="ri-arrow-left-s-line"></i></span>
+          <span><i class="ri-arrow-right-s-line"></i></span>
+        </div> -->
+      </div>
+
+      <div class="drilling-capabilities-grid">
+        <article class="drilling-capability-card">
+          <h3>Drilling<br>Methods</h3>
+          <ul>
+            <li>Mud Rotary</li>
+            <li>Hollow Stem Augers</li>
+            <li>Down Hole Hammer</li>
+            <li>Limited Access Drilling</li>
+          </ul>
+        </article>
+
+        <article class="drilling-capability-card">
+          <h3>Sampling<br>&amp; Coring</h3>
+          <ul>
+            <li>PQ Soil Coring</li>
+            <li>Bedrock Coring</li>
+            <li>SPT Sampling</li>
+            <li>Continuous Sampling</li>
+            <li>Overcoring</li>
+          </ul>
+        </article>
+
+        <article class="drilling-capability-card">
+          <h3>In-Situ Testing &amp; Instrumentation</h3>
+          <ul>
+            <li>CPT Testing</li>
+            <li>PMT Testing</li>
+            <li>Packer Tests</li>
+            <li>Televiewers</li>
+          </ul>
+        </article>
+
+        <article class="drilling-capability-card">
+          <h3>Environmental Installations</h3>
+          <ul>
+            <li>Monitoring Well Installations</li>
+            <li>Soil Vapour Probes</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="field-services" class="drilling-field-section">
+    <div class="drilling-page-inner">
+      <h2>Field Services</h2>
+      <div class="drilling-field-grid">
+        <a href="#equipment" class="drilling-field-card">Augering</a>
+        <a href="#equipment" class="drilling-field-card">Environmental Drilling</a>
+        <a href="#equipment" class="drilling-field-card">Pionjar</a>
+        <a href="#equipment" class="drilling-field-card">Low Clearance Drilling</a>
+        <a href="#equipment" class="drilling-field-card">Mud Rotary/Casing Advance</a>
+        <a href="#equipment" class="drilling-field-card">Diamond/Air Rotary Drilling</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipment" class="drilling-equipment-section">
+    <div class="drilling-equipment-inner">
+      <h2>Drilling Equipment</h2>
+      <a href="#equipment" class="drilling-equipment-button">
+        <span>View more</span>
+        <i class="ri-arrow-right-line" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer-notes">
+    <div class="footer-main">
+      <div class="footer-main-inner">
+        <div class="footer-brand">
+          <img
+            class="footer-logo"
+            src="images/Logo-footer.svg"
+            alt="Geo-Environmental Drilling Inc. logo"
+          >
+          <p class="footer-address">1 Mansewood Ct,<br>Acton, ON L7J 0A1</p>
+
+          <div class="footer-contact-list">
+            <a class="footer-contact-link" href="mailto:estimates@geo-environmentaldrilling.com">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <i class="ri-mail-line"></i>
+              </span>
+              <span>estimates@geo-environmentaldrilling.com</span>
+            </a>
+            <a class="footer-contact-link" href="tel:+19058763388">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <i class="ri-smartphone-line"></i>
+              </span>
+              <span>Phone : (905) 876-3388</span>
+            </a>
+            <p class="footer-contact-link">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <img src="/images/fax_24dp.svg" />
+              </span>
+              <span>Fax: (905) 876-3328</span>
+            </p>
+          </div>
+
+          <div class="footer-socials">
+            <a class="footer-social" href="#" aria-label="Instagram">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a class="footer-social" href="#" aria-label="LinkedIn">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+            <a class="footer-social" href="#" aria-label="Facebook">
+              <i class="ri-facebook-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer">
+          <h2 class="footer-heading">Quick Links</h2>
+          <a href="#services">Services</a>
+          <a href="#about">About Us</a>
+          <a href="#company-high">Health &amp; Safety</a>
+          <a href="#equipment">Equipment</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div class="footer-inquiries">
+          <h2 class="footer-heading">Inquiries</h2>
+          <p>
+            For any inquiries or cost estimates, please call:
+            <a href="tel:+19058763388"> 905-876-3388</a>
+            or email
+            <a href="mailto:estimates@geo-environmentaldrilling.com"> estimates@geo-environmentaldrilling.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Geo-Environmental Drilling Inc. • All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
