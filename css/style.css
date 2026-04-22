@@ -1548,6 +1548,206 @@
     outline: none;
     transform: translateY(-0.125rem);
   }
+  .feature-hero-shell, .feature-hero-wrapper {
+    min-height: 31.25rem;
+  }
+  .feature-hero-shell {
+    background-position: center;
+  }
+  .feature-hero-content {
+    margin-inline: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex: 1;
+    align-items: center;
+    padding: 3rem 1.5rem 2.8125rem;
+  }
+  .feature-hero-copy {
+    display: flex;
+    width: 100%;
+    max-width: 52.6875rem;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .feature-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.75rem, 6vw, 4.0625rem);
+    line-height: 1;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .feature-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: rgb(255 255 255 / 50%);
+  }
+  .feature-breadcrumb a {
+    transition: color 180ms var(--default-transition-timing-function);
+  }
+  .feature-breadcrumb a:hover, .feature-breadcrumb a:focus {
+    color: var(--color-brand-yellow);
+    outline: none;
+  }
+  .feature-list-section {
+    width: 100%;
+    background: #fff;
+    padding-block: 3.75rem;
+  }
+  .feature-page-inner {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1440px;
+    padding-inline: 1.5rem;
+  }
+  .feature-search-row {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1.5rem;
+  }
+  .feature-search {
+    display: flex;
+    width: 100%;
+    max-width: 23.75rem;
+    height: 2.5rem;
+    align-items: center;
+    gap: 0.625rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    background: #fff;
+    padding-inline: 0.625rem;
+    color: rgb(0 0 0 / 30%);
+  }
+  .feature-search input {
+    min-width: 0;
+    flex: 1;
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #333;
+    outline: none;
+  }
+  .feature-search input::placeholder {
+    color: rgb(0 0 0 / 20%);
+  }
+  .feature-tabs {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.3125rem;
+    padding-bottom: 1.25rem;
+  }
+  .feature-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e2e2e2;
+    background: #eee;
+    padding: 0.625rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #000;
+    transition: background-color 180ms var(--default-transition-timing-function), transform 180ms var(--default-transition-timing-function);
+  }
+  .feature-tab.is-active, .feature-tab:hover, .feature-tab:focus {
+    background: var(--color-brand-yellow);
+    outline: none;
+  }
+  .feature-tab:hover, .feature-tab:focus {
+    transform: translateY(-0.0625rem);
+  }
+  .feature-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  .feature-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    border-bottom: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 0.625rem 0.625rem 1.875rem;
+  }
+  .feature-card-image {
+    width: 100%;
+    min-height: 13.75rem;
+    overflow: hidden;
+    background-color: rgb(196 196 196 / 80%);
+    background-image: linear-gradient(-41deg, rgb(0 0 0 / 0%) 4%, rgb(20 70 131 / 20%) 100%), var(--feature-card-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .feature-card-copy {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  .feature-card-copy h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.625rem, 3vw, 2rem);
+    line-height: 1.2;
+    font-weight: 800;
+    color: #333;
+  }
+  .feature-card-copy h2 a {
+    transition: color 180ms var(--default-transition-timing-function);
+  }
+  .feature-card-copy h2 a:hover, .feature-card-copy h2 a:focus {
+    color: var(--color-brand-blue);
+    outline: none;
+  }
+  .feature-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #8695a4;
+  }
+  .feature-card-meta time {
+    color: #21243d;
+  }
+  .feature-card-meta span[aria-hidden="true"] {
+    width: 1px;
+    height: 1.3125rem;
+    background: #8695a4;
+  }
+  .feature-card-text {
+    max-width: 55rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000;
+  }
+  .feature-read-more {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    padding-block: 0.625rem;
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--color-brand-blue);
+    transition: color 180ms var(--default-transition-timing-function), transform 180ms var(--default-transition-timing-function);
+  }
+  .feature-read-more:hover, .feature-read-more:focus {
+    color: var(--color-brand-blue-dark);
+    outline: none;
+    transform: translateX(0.125rem);
+  }
   .daylighting-hero-shell {
     min-height: 43.375rem;
     background-position: center;
@@ -2266,11 +2466,21 @@
     .about-training-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .drilling-page-inner, .drilling-equipment-inner, .equipment-page-inner {
+    .drilling-page-inner, .drilling-equipment-inner, .equipment-page-inner, .feature-page-inner {
       padding-inline: 3rem;
     }
     .equipment-card-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .feature-search-row {
+      justify-content: flex-end;
+    }
+    .feature-card {
+      grid-template-columns: 15.625rem minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+    .feature-card-image {
+      min-height: 13.75rem;
     }
     .drilling-overview-copy {
       padding-inline: 3rem;
@@ -2429,10 +2639,10 @@
       min-height: 31rem;
       clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%);
     }
-    .drilling-page-inner, .drilling-equipment-inner, .equipment-page-inner {
+    .drilling-page-inner, .drilling-equipment-inner, .equipment-page-inner, .feature-page-inner {
       padding-inline: 9rem;
     }
-    .equipment-hero-content {
+    .equipment-hero-content, .feature-hero-content {
       padding: 6.25rem 9rem 2.8125rem;
     }
     .equipment-card-grid {
@@ -2446,6 +2656,9 @@
       margin-inline: 2.5rem;
       padding-inline: 0;
       width: calc(100% - 5rem);
+    }
+    .feature-card-list {
+      gap: 0.625rem;
     }
     .drilling-capabilities-grid {
       grid-template-columns: repeat(4, minmax(0, 1fr));
