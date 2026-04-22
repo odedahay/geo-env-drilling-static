@@ -1390,6 +1390,164 @@
     outline: none;
     transform: translateY(-0.125rem);
   }
+  .equipment-hero-shell, .equipment-hero-wrapper {
+    min-height: 31.25rem;
+  }
+  .equipment-hero-shell {
+    background-position: center;
+  }
+  .equipment-hero-content {
+    margin-inline: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex: 1;
+    align-items: center;
+    padding: 3rem 1.5rem 2.8125rem;
+  }
+  .equipment-hero-copy {
+    display: flex;
+    width: 100%;
+    max-width: 52.6875rem;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .equipment-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.75rem, 6vw, 4.0625rem);
+    line-height: 1;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .equipment-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: rgb(255 255 255 / 50%);
+  }
+  .equipment-breadcrumb a {
+    transition: color 180ms var(--default-transition-timing-function);
+  }
+  .equipment-breadcrumb a:hover, .equipment-breadcrumb a:focus {
+    color: var(--color-brand-yellow);
+    outline: none;
+  }
+  .equipment-page-inner {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1440px;
+    padding-inline: 1.5rem;
+  }
+  .equipment-intro-section {
+    width: 100%;
+    border-top: 9px solid var(--color-brand-yellow);
+    background: #eee;
+  }
+  .equipment-intro-copy {
+    display: flex;
+    max-width: 72rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-block: 3.75rem;
+  }
+  .equipment-intro-copy h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2.125rem, 4vw, 3rem);
+    line-height: 1.2;
+    font-weight: 800;
+    color: #2e2e2e;
+  }
+  .equipment-intro-copy p {
+    max-width: 68rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000;
+  }
+  .equipment-list-section {
+    width: 100%;
+    background: #fff;
+    padding-block: 3.75rem;
+  }
+  .equipment-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .equipment-card {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    background: #fff;
+    padding: 0.625rem;
+  }
+  .equipment-card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    min-height: 14rem;
+    overflow: hidden;
+    background-color: rgb(196 196 196 / 80%);
+    background-image: linear-gradient(-46deg, rgb(0 0 0 / 0%) 4%, rgb(20 70 131 / 30%) 100%), var(--equipment-card-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .equipment-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-inline: 1rem;
+  }
+  .equipment-card-body h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000;
+  }
+  .equipment-card-body ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    padding-left: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000;
+    list-style: disc;
+  }
+  .equipment-card-button {
+    display: inline-flex;
+    width: calc(100% - 2rem);
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-inline: 1rem;
+    margin-top: auto;
+    border: 1px solid var(--color-brand-blue);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--color-brand-blue);
+    transition: background-color 180ms var(--default-transition-timing-function), color 180ms var(--default-transition-timing-function), transform 180ms var(--default-transition-timing-function);
+  }
+  .equipment-card-button:hover, .equipment-card-button:focus {
+    background: var(--color-brand-blue);
+    color: #fff;
+    outline: none;
+    transform: translateY(-0.125rem);
+  }
   .daylighting-hero-shell {
     min-height: 43.375rem;
     background-position: center;
@@ -2108,8 +2266,11 @@
     .about-training-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .drilling-page-inner, .drilling-equipment-inner {
+    .drilling-page-inner, .drilling-equipment-inner, .equipment-page-inner {
       padding-inline: 3rem;
+    }
+    .equipment-card-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .drilling-overview-copy {
       padding-inline: 3rem;
@@ -2268,8 +2429,23 @@
       min-height: 31rem;
       clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%);
     }
-    .drilling-page-inner, .drilling-equipment-inner {
+    .drilling-page-inner, .drilling-equipment-inner, .equipment-page-inner {
       padding-inline: 9rem;
+    }
+    .equipment-hero-content {
+      padding: 6.25rem 9rem 2.8125rem;
+    }
+    .equipment-card-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem 0.625rem;
+    }
+    .equipment-card {
+      min-height: 42.5rem;
+    }
+    .equipment-card-body, .equipment-card-button {
+      margin-inline: 2.5rem;
+      padding-inline: 0;
+      width: calc(100% - 5rem);
     }
     .drilling-capabilities-grid {
       grid-template-columns: repeat(4, minmax(0, 1fr));
