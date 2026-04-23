@@ -26,4 +26,54 @@
   menuMobile.classList.toggle('hidden');
  }
 
+ // date input calendar placeholder
+ const dateInputs = document.querySelectorAll('[data-date-placeholder]');
+
+ dateInputs.forEach((dateInput) => {
+  const input = dateInput.querySelector('input[type="date"]');
+
+  if (!input) return;
+
+  const updateDatePlaceholder = () => {
+   dateInput.classList.toggle('has-value', Boolean(input.value));
+  };
+
+  updateDatePlaceholder();
+  input.addEventListener('input', updateDatePlaceholder);
+  input.addEventListener('change', updateDatePlaceholder);
+
+  dateInput.addEventListener('click', () => {
+   input.focus();
+
+   if (typeof input.showPicker === 'function') {
+    input.showPicker();
+   }
+  });
+ });
+
+  // date input time placeholder
+  const timeInputs = document.querySelectorAll('[data-time-placeholder]');
+
+  timeInputs.forEach((timeInput) =>{
+    const input = timeInput.querySelector('input[type="time"]');
+    
+    if(!input) return;
+
+    const updateTimePlaceholder = () => {
+      timeInput.classList.toggle('has-value', Boolean(input.value))
+    };
+
+    updateTimePlaceholder();
+    input.addEventListener('input', updateTimePlaceholder);
+    input.addEventListener('change', updateTimePlaceholder);
+
+    timeInput.addEventListener('click', ()=>{
+      input.focus();
+
+      if(typeof input.showPicker === 'function'){
+        input.showPicker();
+      }
+    })
+  });
+
 })();
