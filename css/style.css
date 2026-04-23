@@ -1536,8 +1536,8 @@
     margin-inline: 1rem;
     margin-top: auto;
     border: 1px solid var(--color-brand-blue);
-    border-radius: 8px;
-    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    padding: .65rem 1rem;
     font-family: var(--font-display);
     font-size: 1rem;
     line-height: 1.5;
@@ -2427,7 +2427,7 @@
     width: fit-content;
     align-items: center;
     gap: 0.35rem;
-    border: 1px solid #b7c7df;
+    border: 1px solid var(--color-brand-blue);
     border-radius: 4px;
     padding: 0.65rem 1rem;
     font-size: 1rem;
