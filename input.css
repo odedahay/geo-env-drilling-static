@@ -1069,6 +1069,305 @@
     transform: translateY(-0.125rem);
   }
 
+  .equipment-detail-hero-shell,
+  .equipment-detail-hero-wrapper {
+    min-height: 31.25rem;
+  }
+
+  .equipment-detail-hero-shell {
+    background-position: center;
+  }
+
+  .equipment-detail-hero-content {
+    margin-inline: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex: 1;
+    align-items: center;
+    padding: 3rem 1.5rem 2.8125rem;
+  }
+
+  .equipment-detail-hero-copy {
+    display: flex;
+    width: 100%;
+    max-width: 52rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .equipment-detail-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.75rem, 6vw, 4.0625rem);
+    line-height: 1;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #fff;
+  }
+
+  .equipment-detail-hero-subtitle {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+    line-height: 1;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .equipment-detail-breadcrumb {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: rgb(255 255 255 / 50%);
+  }
+
+  .equipment-detail-breadcrumb a {
+    transition: color 180ms var(--default-transition-timing-function);
+  }
+
+  .equipment-detail-breadcrumb a:hover,
+  .equipment-detail-breadcrumb a:focus {
+    color: var(--color-brand-yellow);
+    outline: none;
+  }
+
+  .equipment-detail-main-section {
+    width: 100%;
+    background: #fff;
+    padding-block: 3.75rem;
+  }
+
+  .equipment-detail-inner {
+    margin-inline: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-inline: 1.5rem;
+  }
+
+  .equipment-detail-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .equipment-detail-back,
+  .equipment-spec-download {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    background: #fff;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    color: var(--color-brand-blue);
+    transition:
+      border-color 180ms var(--default-transition-timing-function),
+      transform 180ms var(--default-transition-timing-function);
+  }
+
+  .equipment-detail-back:hover,
+  .equipment-detail-back:focus,
+  .equipment-spec-download:hover,
+  .equipment-spec-download:focus {
+    border-color: var(--color-brand-blue);
+    outline: none;
+    transform: translateY(-0.0625rem);
+  }
+
+  .equipment-detail-title,
+  .equipment-detail-overview h3,
+  .equipment-detail-card h3,
+  .equipment-detail-spec h3,
+  .equipment-detail-side h3 {
+    font-family: var(--font-display);
+    color: #000;
+  }
+
+  .equipment-detail-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+  .equipment-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+  }
+
+  .equipment-detail-main {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .equipment-detail-image {
+    width: 100%;
+    min-height: 20rem;
+    background-color: rgb(255 255 255 / 80%);
+    background-image: var(--equipment-detail-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .equipment-detail-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .equipment-detail-overview h3,
+  .equipment-detail-spec h3,
+  .equipment-detail-side h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+  .equipment-detail-overview p,
+  .equipment-detail-card li,
+  .equipment-detail-spec dt,
+  .equipment-detail-spec dd,
+  .equipment-safety-card li {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  .equipment-detail-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    background: #eee;
+    padding: 0.625rem 1.25rem 1.875rem 0.9375rem;
+  }
+
+  .equipment-detail-card h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+  .equipment-detail-card ul,
+  .equipment-safety-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1.5rem;
+    list-style: disc;
+  }
+
+  .equipment-detail-spec {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    background: #fff;
+    padding: 0.625rem 1.25rem 1.875rem 0.9375rem;
+  }
+
+  .equipment-detail-spec dl {
+    display: grid;
+    max-width: 34rem;
+    grid-template-columns: 1fr;
+  }
+
+  .equipment-detail-spec div {
+    display: grid;
+    grid-template-columns: minmax(9.5rem, 0.9fr) minmax(0, 1fr);
+  }
+
+  .equipment-detail-spec dt {
+    background: #f9f7f7;
+    padding-inline: 0.625rem;
+  }
+
+  .equipment-detail-spec dd {
+    padding-inline: 0.625rem;
+  }
+
+  .equipment-detail-side {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .equipment-safety-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .equipment-safety-card ul {
+    border-radius: 8px;
+    background: #f9fbff;
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  }
+
+  .equipment-spec-download {
+    font-size: 1rem;
+  }
+
+  .equipment-quote-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .equipment-quote-button {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid var(--color-brand-yellow);
+    border-radius: 8px;
+    background: var(--color-brand-yellow);
+    padding: 1.25rem 2.5rem;
+    font-family: var(--font-display);
+    font-size: 1.375rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--color-brand-blue);
+    transition:
+      background-color 180ms var(--default-transition-timing-function),
+      border-color 180ms var(--default-transition-timing-function),
+      transform 180ms var(--default-transition-timing-function);
+  }
+
+  .equipment-quote-button-outline {
+    border-color: var(--color-brand-blue);
+    background: #fff;
+  }
+
+  .equipment-quote-button:hover,
+  .equipment-quote-button:focus {
+    background: #f7b041;
+    border-color: #f7b041;
+    outline: none;
+    transform: translateY(-0.125rem);
+  }
+
+  .equipment-quote-button-outline:hover,
+  .equipment-quote-button-outline:focus {
+    background: var(--color-brand-blue);
+    border-color: var(--color-brand-blue);
+    color: #fff;
+  }
+
   .feature-hero-shell,
   .feature-hero-wrapper {
     min-height: 31.25rem;
@@ -1091,7 +1390,7 @@
   .feature-hero-copy {
     display: flex;
     width: 100%;
-    max-width: 52.6875rem;
+    max-width: 53.5rem;
     flex-direction: column;
     gap: 1.25rem;
     align-items: flex-start;
@@ -1103,6 +1402,14 @@
     font-size: clamp(2.75rem, 6vw, 4.0625rem);
     line-height: 1;
     font-weight: 800;
+    text-transform: capitalize;
+    color: #fff;
+  }
+   .feature-hero-subtitle {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 500;
     text-transform: capitalize;
     color: #fff;
   }
@@ -2961,6 +3268,7 @@
     .drilling-page-inner,
     .drilling-equipment-inner,
     .equipment-page-inner,
+    .equipment-detail-inner,
     .feature-page-inner,
     .feature-details-inner,
     .booking-form-shell,
@@ -2970,6 +3278,10 @@
 
     .equipment-card-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .equipment-detail-image {
+      min-height: 28rem;
     }
 
     .feature-search-row {
@@ -3200,10 +3512,24 @@
     .drilling-page-inner,
     .drilling-equipment-inner,
     .equipment-page-inner,
+    .equipment-detail-inner,
     .feature-page-inner,
     .feature-details-inner,
     .booking-contact-links-inner {
       padding-inline: 9rem;
+    }
+
+    .equipment-detail-hero-content {
+      padding: 6.25rem 9rem 2.8125rem;
+    }
+
+    .equipment-detail-layout {
+      grid-template-columns: minmax(0, 1fr) 18.75rem;
+      align-items: start;
+    }
+
+    .equipment-detail-image {
+      min-height: 33.125rem;
     }
 
     .feature-details-inner {
