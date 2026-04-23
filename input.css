@@ -2868,16 +2868,10 @@
   }
 
   .contact-select {
-    appearance: none;
-    background-image:
-      linear-gradient(45deg, transparent 50%, #333 50%),
-      linear-gradient(135deg, #333 50%, transparent 50%);
-    background-position:
-      calc(100% - 1rem) calc(50% - 0.125rem),
-      calc(100% - 0.6875rem) calc(50% - 0.125rem);
-    background-size: 0.375rem 0.375rem, 0.375rem 0.375rem;
-    background-repeat: no-repeat;
-    padding-right: 2rem;
+    appearance: auto;
+    -webkit-appearance: menulist;
+    background-image: none;
+    padding-right: 0.625rem;
   }
 
   .contact-textarea {
@@ -3030,16 +3024,10 @@
   }
 
   .contact-select {
-    appearance: none;
-    background-image:
-      linear-gradient(45deg, transparent 50%, #333 50%),
-      linear-gradient(135deg, #333 50%, transparent 50%);
-    background-position:
-      calc(100% - 1rem) calc(50% - 0.125rem),
-      calc(100% - 0.6875rem) calc(50% - 0.125rem);
-    background-size: 0.375rem 0.375rem, 0.375rem 0.375rem;
-    background-repeat: no-repeat;
-    padding-right: 2rem;
+    appearance: auto;
+    -webkit-appearance: menulist;
+    background-image: none;
+    padding-right: 0.625rem;
   }
 
   .contact-textarea {
@@ -3351,6 +3339,20 @@
 
     .equipment-card-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-select {
+      appearance: none;
+      -webkit-appearance: none;
+      background-image:
+        linear-gradient(45deg, transparent 50%, #333 50%),
+        linear-gradient(135deg, #333 50%, transparent 50%);
+      background-position:
+        calc(100% - 1rem) calc(50% - 0.125rem),
+        calc(100% - 0.6875rem) calc(50% - 0.125rem);
+      background-size: 0.375rem 0.375rem, 0.375rem 0.375rem;
+      background-repeat: no-repeat;
+      padding-right: 2rem;
     }
 
     .equipment-detail-image {
