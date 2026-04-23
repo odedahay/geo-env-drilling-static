@@ -3207,6 +3207,79 @@
     position: relative; 
   }
 
+  #menu-btn {
+    position: relative;
+    z-index: 120;
+  }
+
+  body.menu-open #menu-btn {
+    position: fixed;
+    top: 1.875rem;
+    right: 2rem;
+    z-index: 1000;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  body.menu-open #menu-btn:hover,
+  body.menu-open #menu-btn:focus-visible {
+    background: transparent;
+    outline: none;
+  }
+
+  #menu {
+    position: fixed;
+    inset: 0;
+    z-index: 110;
+    min-height: 100dvh;
+    width: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: rgb(0 0 0 / 98%);
+    padding: 7.5rem 2rem 2rem;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    font-weight: 500;
+  }
+
+  .mobile-menu-toggle i {
+    transition: transform 180ms var(--default-transition-timing-function);
+  }
+
+  .mobile-menu-toggle.is-open i {
+    transform: rotate(180deg);
+  }
+
+  .mobile-menu-submenu {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 2rem;
+  }
+
+  .mobile-menu-submenu.is-open {
+    display: flex;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+  }
+
+  body.menu-open #menu {
+    display: flex;
+  }
+
   .hamburger-top,
   .hamburger-middle,
   .hamburger-bottom{
